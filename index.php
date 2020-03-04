@@ -30,7 +30,7 @@
               <td><?php echo $room["id"];  ?></td>
               <td><?php echo $room["room_number"] ?></td>
               <td><?php echo $room["floor"] ?></td>
-              <td><a href="#">INFO STANZA</a></td>
+              <td><a href="info/info.php?id=<?php echo $room['id'] ?>">INFO STANZA</a></td>
               <td><a href="#">UPDATE</a></td>
               <td>ELIMINA</td>
             </tr>
