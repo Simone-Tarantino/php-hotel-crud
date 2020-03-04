@@ -6,10 +6,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="dist/app.css">
     <title>php-hotel-crud</title>
   </head>
   <body>
-    <table>
+    <table class="table">
       <thead>
         <tr>
           <th>ID</th>
@@ -21,14 +22,22 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <!-- <td >id </td> -->
-          <!-- <td> numero stanza </td> -->
-          <!-- <td> piano stanza </td> -->
-          <td><a href="#">INFO STANZA</a></td>
-          <td><a href="#">UPDATE</a></td>
-          <td>ELIMINA</td>
-        </tr>
+        <?php
+        if (!empty($rooms)){
+          foreach ($rooms as $room) {
+        ?>
+            <tr>
+              <td><?php echo $room["id"];  ?></td>
+              <td><?php echo $room["room_number"] ?></td>
+              <td><?php echo $room["floor"] ?></td>
+              <td><a href="#">INFO STANZA</a></td>
+              <td><a href="#">UPDATE</a></td>
+              <td>ELIMINA</td>
+            </tr>
+        <?php
+          }
+        }
+        ?>
       </tbody>
     </table>
   </body>
