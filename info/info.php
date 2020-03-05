@@ -1,14 +1,8 @@
 <?php
-  include  'database.php';
+  include __DIR__ . '/database.php';
+  include __DIR__ . '/../partials/header.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../dist/app.css">
-    <title>Info Stanza</title>
-  </head>
   <body>
     <ul class="list-group">
       <li class="list-group-item">Id: <?php echo $room['id'] ?></li>

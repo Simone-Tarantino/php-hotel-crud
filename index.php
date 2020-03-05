@@ -1,14 +1,9 @@
 <?php
-  include 'database.php';
+  include __DIR__ . '/database.php';
+  include __DIR__ . '/partials/header.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="dist/app.css">
-    <title>php-hotel-crud</title>
-  </head>
+
   <body>
     <table class="table">
       <thead>
@@ -31,7 +26,7 @@
               <td><?php echo $room["room_number"] ?></td>
               <td><?php echo $room["floor"] ?></td>
               <td><a href="info/info.php?id=<?php echo $room['id'] ?>">INFO STANZA</a></td>
-              <td><a href="#">UPDATE</a></td>
+              <td><a href="#">UPDATE INFO STANZA</a></td>
               <td>ELIMINA</td>
             </tr>
         <?php
