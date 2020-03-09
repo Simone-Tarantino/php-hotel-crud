@@ -1,4 +1,6 @@
 <?php
+
+  // funzione per prendere tutti i risultati di una tabella
   function getAll($conn, $table) {
     // dal db facciamo questa chiamata sql in cui vogliamo tutti i dati dalla tabella "stanze" e definiamo il risultato che è uguale alla query
     $sql = "SELECT * FROM $table";
@@ -23,4 +25,24 @@
     }
     // ritorniamo sempre la variabile $results come risultato della funzione
     return $results;
+  }
+
+
+  // funzione per prendere tutti i risultati dato un id specifico in una tabella
+
+  function getById($conn, $table, $id) {
+
+    $sql = "SELECT * FROM `$table` WHERE `id`='$id'";
+
+    $resultQuery = $conn->query($sql);
+
+    if ($resultQuery && $resultQuery->num_rows > 0) {
+      $result = $resultQuery->fetch_assoc();
+    } elseif ($result) {
+      $result = [];
+    } else {
+      $result = false;
+    }
+
+    return $result;
   }

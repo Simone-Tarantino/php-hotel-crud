@@ -9,4 +9,7 @@
       <li class="list-group-item">Numero Stanza: <?php echo $room['room_number'] ?></li>
       <li class="list-group-item">Letti: <?php echo $room['beds'] ?></li>
     </ul>
-<?php include __DIR__ . "/../partials/footer.php"; ?>
+
+<?php
+  include __DIR__ . "/../partials/footer.php"; 
+?>
