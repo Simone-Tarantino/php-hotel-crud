@@ -1,5 +1,5 @@
 <?php
-  include __DIR__ . '/database.php';
+  include __DIR__ . '/../database.php';
 
   if(empty($_POST['id'])) {
     die('Nessun ID inserito');

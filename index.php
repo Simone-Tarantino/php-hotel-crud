@@ -1,5 +1,5 @@
 <?php
-  include __DIR__ . '/database.php';
+  include __DIR__ . '/server.php';
   include __DIR__ . '/partials/header.php';
 ?>
 
