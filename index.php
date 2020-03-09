@@ -4,7 +4,6 @@
 ?>
 
 
-  <body>
     <table class="table">
       <thead>
         <tr>
@@ -42,5 +41,4 @@
         ?>
       </tbody>
     </table>
-  </body>
-</html>
+<?php include __DIR__ . "/partials/footer"; ?>
