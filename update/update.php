@@ -1,22 +1,25 @@
 <?php
-include __DIR__ . '/../database.php';
-include __DIR__ . '/../partials/header.php';
+  include __DIR__ . '/../database.php';
+  include __DIR__ . '/../partials/header.php';
 
-if (!empty($_GET['id'])) {
-  $idRoom = $_GET['id'];
-}
+  // se l'id che viene passato con la chiamata get non è vuto
+  if (!empty($_GET['id'])) {
+    // allora lo mettiamo in una variabile
+    $idRoom = $_GET['id'];
+  }
 
-$sql = "SELECT * FROM `stanze` WHERE `id`='$idRoom'";
+  $sql = "SELECT * FROM `stanze` WHERE `id`='$idRoom'";
 
-$result = $conn->query($sql);
+  $result = $conn->query($sql);
 
-if ($result && $result->num_rows > 0) {
-  $room = $result->fetch_assoc();
-}
-else {
-  die('ID non esistente');
-}
+  if ($result && $result->num_rows > 0) {
+    $room = $result->fetch_assoc();
+  }
+  else {
+    die('ID non esistente');
+  }
 ?>
+
 <div class="container">
   <div class="row">
     <div class="col-4 mx-auto">
