@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Ffffimone\desktop\boolean esercizi\php-hotel-crud\src\app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Ffffimone\desktop\boolean esercizi\php-hotel-crud\src\app.scss */"./src/app.scss");
+__webpack_require__(/*! C:\Users\Ffffimone\Desktop\Boolean esercizi\php-hotel-crud\src\app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Ffffimone\Desktop\Boolean esercizi\php-hotel-crud\src\app.scss */"./src/app.scss");
 
 
 /***/ })

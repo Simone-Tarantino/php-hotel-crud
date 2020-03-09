@@ -17,15 +17,15 @@
       </thead>
       <tbody>
         <?php
-        if (!empty($rooms)){
-          foreach ($rooms as $room) {
+        if (!empty($results)){
+          foreach ($results as $room) {
         ?>
             <tr>
               <td><?php echo $room["id"];  ?></td>
-              <td><?php echo $room["room_number"] ?></td>
-              <td><?php echo $room["floor"] ?></td>
-              <td><a href="info/info.php?id=<?php echo $room['id'] ?>">INFO STANZA</a></td>
-              <td><a href="#">UPDATE INFO STANZA</a></td>
+              <td><?php echo $room["room_number"]; ?></td>
+              <td><?php echo $room["floor"]; ?></td>
+              <td><a href="info/info.php?id=<?php echo $room['id']; ?>">INFO STANZA</a></td>
+              <td><a href="update/update.php?id=<?php echo $room['id']; ?>">UPDATE INFO STANZA</a></td>
               <td>
                 <!-- con il form facciamo la chiamata post per il delete e mettiamo come action la pagina che deve essere raggiunta con il form e il metodo, POST (per questioni di sicurezza).
                 Tramite l'input, di tipo hidden dato che non vogliamo mostrare nulla all'utente a parte la nostra scritta DELETE (simile ad un bottone), passiamo il valore id (name) e l'id stesso della camera (value) alla pagina delete.php che tramite il GET elimina il nostro elemento-->
