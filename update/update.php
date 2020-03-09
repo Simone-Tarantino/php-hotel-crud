@@ -2,9 +2,9 @@
   include __DIR__ . '/../database.php';
   include __DIR__ . '/../partials/header.php';
 
-  // se l'id che viene passato con la chiamata get non è vuto
+
   if (!empty($_GET['id'])) {
-    // allora lo mettiamo in una variabile
+
     $idRoom = $_GET['id'];
   }
 

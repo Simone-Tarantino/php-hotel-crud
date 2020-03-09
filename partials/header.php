@@ -9,6 +9,8 @@
     <header>
       <nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">Hotel Booleana</span>
+        <span class="navbar-brand mb-0"><a href="<?php echo $basePath ?>create/create.php">Crea nuova stanza</a></span>
+        <span class="navbar-brand mb-0"><a href="<?php echo $basePath ?>">Tutte le stanze</a></span>
       </nav>
     </header>
   </body>
